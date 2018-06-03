@@ -115,7 +115,7 @@ namespace Assets.Scripts.Algorithms.Neat
                     trader._nervousSystem._turnUp = outputArr[3] > 0.5;
                     trader._nervousSystem._turnDown = outputArr[4] > 0.5;
                     trader._nervousSystem._tryBuy = outputArr[5] > 0.5;
-                    trader._nervousSystem._trySell = outputArr[6] > 0.5;
+                    trader._nervousSystem._trySell = outputArr[5] < 0.5;
                     trader._nervousSystem._move = outputArr[7] > 0.5;
                 }
 
